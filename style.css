@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65); 
+    z-index: 1;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.866);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    z-index: 2; 
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: center; 
+  }
+  
+  .input-group label {
+    display: block;
+    text-align: left;
+  }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1f1f1f;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d13800;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #ff4400;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: left;
+    display: none;
+}
+
+#resultado p {
+    margin: 5px 0;
+    color: #333;
+}
+
+footer {
+    margin-top: 20px;
+    z-index: 2; 
+    position: relative;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #d13800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+footer a:hover {
+    background-color: #ff4400;
+}
